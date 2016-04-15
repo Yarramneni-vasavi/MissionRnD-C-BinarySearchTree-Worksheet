@@ -179,11 +179,11 @@ namespace spec
 			for (int i = 0; i < elements; i++){
 				root = add_node_spec(root, nums[i]);
 			}
-			/*
+			
 			int ans[3][10] = {
-				{ Expected Inorder Array },
-				{ Expected PreOrder Array },
-				{ Expected PostOrder Array }
+				{ 4, 6, 8, 12, 16, 40, 65, 67, 72, 89 },
+				{ 40, 4, 6, 8, 12, 16, 65, 89, 67, 72 },
+				{ 16, 12, 8, 6, 4, 72, 67, 89, 65, 40 }
 			};
 			int results[3][10];
 			inorder(root, results[0]);
@@ -196,7 +196,7 @@ namespace spec
 					Assert::AreEqual(ans[i][j], results[i][j], L"TestCase Failed for TenElems", 1, 2);
 				}
 			}
-			*/
+			
 
 		};
 
